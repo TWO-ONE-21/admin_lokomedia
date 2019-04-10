@@ -19,7 +19,7 @@ print "
 ";
 echo "masukan site  : ";
 $target = trim(fgets(STDIN));
-$list = "cakil_wordlist.txt";
+$list = "admin_lokomedia.txt";
 if(!preg_match("/^http:\/\//",$target) AND !preg_match("/^https:\/\//",$target)){
 	$targetnya = "http://$target";
 }else{
