@@ -1,37 +1,34 @@
 <?php
-// Recode By: 5IG4R3T_KR3T3K
-// WordList By : Yukinoshita47
-// Usability : Admin Finder Lokomedia
-// Facebook: https://facebook.com/CHECKPOlNT
-// Thanks To: MR.CAKIL - MINANG SILENT
-
+// Author Name : Mr.cakil
+// Information List : 4001 list
+// contact here : mrcakil@programmer.net
+// Fb : http://facebook.com/dendisaimam.dendisaimam.1
+// greetz : IndoXploit - AnonCyberTeam - 99syndicate
 print "   
 	
-██╗      ██████╗ ██╗  ██╗ ██████╗ ███╗   ███╗███████╗██████╗ ██╗ █████╗ 
-██║     ██╔═══██╗██║ ██╔╝██╔═══██╗████╗ ████║██╔════╝██╔══██╗██║██╔══██╗
-██║     ██║   ██║█████╔╝ ██║   ██║██╔████╔██║█████╗  ██║  ██║██║███████║
-██║     ██║   ██║██╔═██╗ ██║   ██║██║╚██╔╝██║██╔══╝  ██║  ██║██║██╔══██║
-███████╗╚██████╔╝██║  ██╗╚██████╔╝██║ ╚═╝ ██║███████╗██████╔╝██║██║  ██║
-╚══════╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝╚═════╝ ╚═╝╚═╝  ╚═╝
+ █████╗ ██████╗ ███╗   ███╗██╗███╗   ██╗    ███████╗██╗███╗   ██╗██████╗ ███████╗██████╗ 
+██╔══██╗██╔══██╗████╗ ████║██║████╗  ██║    ██╔════╝██║████╗  ██║██╔══██╗██╔════╝██╔══██╗
+███████║██║  ██║██╔████╔██║██║██╔██╗ ██║    █████╗  ██║██╔██╗ ██║██║  ██║█████╗  ██████╔╝
+██╔══██║██║  ██║██║╚██╔╝██║██║██║╚██╗██║    ██╔══╝  ██║██║╚██╗██║██║  ██║██╔══╝  ██╔══██╗
+██║  ██║██████╔╝██║ ╚═╝ ██║██║██║ ╚████║    ██║     ██║██║ ╚████║██████╔╝███████╗██║  ██║
+╚═╝  ╚═╝╚═════╝ ╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝    ╚═╝     ╚═╝╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝
                                                                                          
-                Admin Finder Lokomedia - coded by ./Mr.cakil - recode by 5IG4R3T_KR3T3K
-  Thanks to  :Mr.cakil - Yukinoshita47 - Minang Silent
+                Admin Finder - coded by ./Mr.cakil
+  Information list : 4001 list
+  Thanks to  :IndoXploit - AnonCyberTeam - 99syndicate
 ";
-
-echo "Url sitenya  : ";
+echo "masukan site  : ";
 $target = trim(fgets(STDIN));
-$list = "admin_lokomedia.txt";
+$list = "cakil_wordlist.txt";
 if(!preg_match("/^http:\/\//",$target) AND !preg_match("/^https:\/\//",$target)){
 	$targetnya = "http://$target";
 }else{
 	$targetnya = $target;
 }
-
 $buka = fopen("$list","r");
 $ukuran = filesize("$list");
 $baca = fread($buka,$ukuran);
 $lists = explode("\r\n",$baca);
-
 foreach($lists as $login){
 	$log = "$targetnya/$login";
 	$ch = curl_init("$log");
@@ -43,9 +40,9 @@ foreach($lists as $login){
 	if($httpcode == 200){
 		 $handle = fopen("result.txt", "a+");
 		fwrite($handle, "$log\n");
-		print "\n\n [".date('H:m:s')."] Mencoba : $log => Valid\n";
+		print "\n\n [".date('H:m:s')."] Mencoba : $log => Ditemukan\n";
 	}else{
-		print "\n[".date('H:m:s')."] Mencoba : $log => Gak Valid";
+		print "\n[".date('H:m:s')."] Mencoba : $log => tidak di temukan";
 	}
 }
   
