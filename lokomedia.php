@@ -43,9 +43,9 @@ foreach($lists as $login){
 	if($httpcode == 200){
 		 $handle = fopen("result.txt", "a+");
 		fwrite($handle, "$log\n");
-		print "\n\n [".date('H:m:s')."] Mencoba : $log ====> Valid\n";
+		print "\n\n [".date('H:m:s')."] Mencoba : $log => Valid\n";
 	}else{
-		print "\n[".date('H:m:s')."] Mencoba : $log ====> Gak Valid";
+		print "\n[".date('H:m:s')."] Mencoba : $log => Gak Valid";
 	}
 }
   
