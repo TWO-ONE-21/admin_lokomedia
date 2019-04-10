@@ -14,7 +14,7 @@ print "
 ███████╗╚██████╔╝██║  ██╗╚██████╔╝██║ ╚═╝ ██║███████╗██████╔╝██║██║  ██║
 ╚══════╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝╚═════╝ ╚═╝╚═╝  ╚═╝
                                                                                          
-  Admin Finder Lokomedia - coded by ./Mr.cakil - recode by 5IG4R3T_KR3T3K
+                Admin Finder Lokomedia - coded by ./Mr.cakil - recode by 5IG4R3T_KR3T3K
   Thanks to  :Mr.cakil - Yukinoshita47 - Minang Silent
 ";
 
